@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Becerril - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Daniel Becerril
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="earth-1756274_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Daniel Becerril! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer apprentice in both application and presentation layers.
+            I am learning the microservices, APIs, and different frameworks that are involved in the front-end and back-end.
+            I am learning through Coursera and I have had experience using SQL and a little bit of Python.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="database-4941301_1280.png"/>
+            <h6>SQL</h6>
+            <p>1 year experience</p>
+        </div>
+          
+        <div class="skill">
+            <img src="python-8665904_960_720.png"/>
+            <h6>Python</h6>
+            <p>1 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="microsoft-5977659_1280.png"/>
+            <h6>Microsoft Office</h6>
+            <p>5 years experience</p>
+        </div>
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Cat minigame Chatbot</h3>
+            <ul>
+              <li>Developed during an immersion a minigame about a hacker cat with use of Java and implemented it on Telegram</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Machine Learning House pricing Assesment</h3>
+            <ul>
+              <li>Developed and tested a machine learning model using Python that predicted the pricing of different private properties in the city of Bogota, Colombia.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fanclub Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a small fandom community so they could share files, posts and be up to date with the latest news</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel always gets the work done. He is very work centered and professional. 
+          He keeps all in order and clean. Also, he is very competent and well-done. 
+          Also, he treats his coworkers with respect.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel is a very intelligent and knowledgeable professional. He can learn very fast any work that you teach him.
+          He comes up with new and more efficient ways to get the job done. 
+          He has a way to organize the tasks and finish them on time.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          When I worked with Daniel it was the best experience. If you had a question, he would answer it in a very comprehensible way.
+          He could help you if you got stuck in some task and could teach you how to do it better for the next time!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Your recommendation has been added! Many thanks!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
